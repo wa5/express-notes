@@ -1,0 +1,30 @@
+
+      <h1>hello all im home page</h1>
+        <%=    foo %>
+        <%=    da %>
+
+<h1>im displaying data in array in ejs  tat is arry of object</h1>
+
+<ul>
+    <%  for (var x of arraydata) {%>
+
+    <li><%=  x.chocalate %> </li>
+    <% }%>
+</ul>
+
+<h1>im displaying data in array in ejs  if condition</h1>
+
+<ul>
+    <%  for (var x1 of arraydata) {%>
+
+        <% if(x1.chocalate=="dirymilk") {%> 
+            <li>i love <%= x1.chocalate %> </li>
+            <% }else{ %> 
+                <li>i hate <%= x1.chocalate %> </li>
+                <% } %> 
+  
+    <% }%>
+</ul>
+
+
+     
