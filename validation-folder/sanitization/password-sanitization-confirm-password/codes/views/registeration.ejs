@@ -1,0 +1,53 @@
+<form action="/handleform"  method="POST"  name="registrationForm">
+
+
+<div>
+    <label for=""> User Name</label><br>
+    <% if( typeof details!='undefined') {%> 
+    <input type="text" name="username" id="" value="<%= details.username %> ">
+    <% }else{ %>
+        <input type="text" name="username" id="" value=" ">
+        <% } %>
+    
+</div>
+</div>
+<div>
+    <label for=""> Email</label><br>
+    <% if( typeof details!='undefined') {%> 
+        <input type="email" name="email" id="" value="<%= details.email %> ">
+        <% }else{ %>
+            <input type="email" name="email" id="" value="">
+            <% } %>
+   
+      
+</div>
+<div>
+    <label for=""> password</label><br>
+    <input type="password" name="password" id="" value="">
+    <% if( typeof error.password!='undefined') {%> 
+        <p>
+            <%= error.password.msg %> 
+        </p>
+        <% } %>
+          
+</div>
+</div>
+<div>
+    <label for=""> Confirm password</label><br>
+    <input type="password" name="Confirmpassword" id="" value="">
+    <% if( typeof error.Confirmpassword!='undefined') {%> 
+        <p>
+            <%= error.Confirmpassword.msg %> 
+        </p>
+        <% } %>
+</div>
+
+    
+
+<div>
+    <input type="submit" name="" id="">
+</div>
+
+   
+  
+</form>
